@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Анализатор текста</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <h1>Анализатор текста</h1>
+      <p class="subtitle">Мини-веб-приложение для подсчета характеристик текста</p>
+
+      <label for="textInput">Введите текст для анализа:</label>
+      <textarea id="textInput" placeholder="Например: Методология включает систему методов, принципов и подходов..."></textarea>
+
+      <div class="buttons">
+        <button id="analyzeBtn">Проанализировать</button>
+        <button id="clearBtn" class="secondary">Очистить</button>
+      </div>
+
+      <div class="results" aria-live="polite">
+        <div class="result-item">
+          <span class="result-label">Символов:</span>
+          <span id="charCount">0</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Слов:</span>
+          <span id="wordCount">0</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Предложений:</span>
+          <span id="sentenceCount">0</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Самое длинное слово:</span>
+          <span id="longestWord">-</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
